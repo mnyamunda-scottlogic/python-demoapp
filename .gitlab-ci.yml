@@ -1,0 +1,6 @@
+run_tests:
+  image: python:3.9-slim-buster # allows usage of python and pip 
+  before_script:
+    - apt-get-update && apt-get -y install make # install make
+  script:
+    - make test
